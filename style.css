@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.section-one{
+    height:30vh;
+    background-image:  radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.6)),url(/images/mountains.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: 300;
+}
+.section-one>h4{
+    margin:1em;
+}
+#balance{
+    margin:1rem;
+    font-size: 3rem;
+    font-weight: 300;
+}
+.total-income-div{
+    background:rgb(51, 167, 157);
+    width:300px;
+    padding:10px;
+    margin:5px;
+    font-size: .9rem;
+}
+.total-expense-div{
+    background:rgb(212, 94, 119);
+    width:300px;
+    padding:10px;
+    margin:5px;
+    font-size: .9rem;
+}
+
+/*********** SECTION TWO ************/
+.section-two{
+    height:60px;
+    background:rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-two input,
+.section-two select,
+.section-two button{
+    height:40px;
+    margin:5px;
+    padding:5px;
+    border-radius: 5px;
+    border:none;
+}
+.section-two button{
+    background: none;
+    cursor: pointer;
+    transition: transform 100ms ease;
+}
+.section-two button:hover{
+    transform: scale(1.1);
+}
+.section-two input[type='text']{
+    width:300px;
+}
+.section-two input[type='number']{
+    width:100px;
+}
+
+/*********** SECTION THREE ************/
+.section-three{
+    display: flex;
+    justify-content: center;
+    color:rgb(107, 107, 107);
+}
+.section-three h3{
+    padding:10px;
+}
+.section-three .income h3,
+.section-three .income .value{
+    color:rgb(51, 167, 157);
+}
+
+.section-three .expense h3,
+.section-three .expense .value{
+    color:rgb(212, 94, 119)
+}
+.section-three>div{
+    margin:2rem;
+    flex-basis: 35%;
+}
+.section-three>div li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-top:2px solid rgb(202, 202, 202);
+    padding:.5rem;
+}
+
