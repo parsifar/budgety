@@ -14,24 +14,25 @@
 <body>
     <section class="section-one">
         <h4>Available Budget this month:</h4>
-        <h2 id="balance">30244</h2>
+        <h2 id="balance">0</h2>
         <div class="total-income-div">
             <span>INCOME</span>
-            <span id="total-income"></span>
+            <span id="total-income">0</span>
         </div>
         <div class="total-expense-div">
             <span>EXPENSES</span>
-            <span id="total-expense"></span>
+            <span id="total-expense">0</span>
+            <span id="total-percent">%</span>
         </div>
     </section>
     <section class="section-two">
-        <select name="" id="">
+        <select name="" id="plusminus">
             <option value="income">+</option>
             <option value="expense">_</option>
         </select>
-        <input type="text" placeholder="Add Description">
+        <input type="text" placeholder="Add Description" id="description">
         <input type="number" name="" id="value" placeholder="value">
-        <button>
+        <button id="submit-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(51, 167, 157)">
                 <path
                     d="M5.48 10.089l1.583-1.464c1.854.896 3.028 1.578 5.11 3.063 3.916-4.442 6.503-6.696 11.311-9.688l.516 1.186c-3.965 3.46-6.87 7.314-11.051 14.814-2.579-3.038-4.301-4.974-7.469-7.911zm14.407.557c.067.443.113.893.113 1.354 0 4.962-4.038 9-9 9s-9-4.038-9-9 4.038-9 9-9c1.971 0 3.79.644 5.274 1.723.521-.446 1.052-.881 1.6-1.303-1.884-1.511-4.271-2.42-6.874-2.42-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11c0-1.179-.19-2.313-.534-3.378-.528.633-1.052 1.305-1.579 2.024z" />
@@ -41,31 +42,18 @@
     <section class="section-three">
         <div class="income">
             <h3>INCOME</h3>
-            <ul>
-                <li>
-                    <span class="description">web dev</span>
-                    <span class="value"> 2500</span>
-                </li>
-                <li>
-                    <span class="description">sold car</span>
-                    <span class="value"> 5500</span>
-                </li>
+            <ul id="income-list">
+
             </ul>
         </div>
         <div class="expense">
             <h3>EXPENSES</h3>
-            <ul>
-                <li>
-                    <span class="description">rent</span>
-                    <span class="value"> 1200</span>
-                </li>
-                <li>
-                    <span class="description">groceries</span>
-                    <span class="value"> 200</span>
-                </li>
+            <ul id="expense-list">
+
             </ul>
         </div>
     </section>
+
 
     <script src="/app.js"> </script>
 </body>

@@ -7,7 +7,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .section-one{
-    height:30vh;
+    height:35vh;
     background-image:  radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.6)),url(/images/mountains.jpg);
     background-size: cover;
     background-position: center;
@@ -32,6 +32,9 @@ body{
     padding:10px;
     margin:5px;
     font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
 }
 .total-expense-div{
     background:rgb(212, 94, 119);
@@ -39,6 +42,19 @@ body{
     padding:10px;
     margin:5px;
     font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    position: relative;
+}
+#total-percent{
+    position:absolute;
+    right:10px;
+    top:50%;
+    background:rgba(255,255,255,0.2);
+    padding:2px;
+    transform: translateY(-50%);
+    font-size: .7rem;
 }
 
 /*********** SECTION TWO ************/
@@ -94,12 +110,43 @@ body{
 .section-three>div{
     margin:2rem;
     flex-basis: 35%;
+    overflow: hidden;
 }
 .section-three>div li{
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    position:relative;
     border-top:2px solid rgb(202, 202, 202);
     padding:.5rem;
 }
+.section-three>div li .value{
+    position: absolute;
+    right:4rem;
+    transition:transform 300ms ease-in-out;
+}
+.section-three>div li .percent{
+    position: absolute;
+    right:.5rem;
+    transition:transform 300ms ease-in-out;
+    background: rgba(184, 67, 106, 0.31);
+    font-size: .8rem;
+    top:0.6rem;
+}
+
+.section-three>div li button{
+    position: absolute;
+    right:-50px;
+    transition:transform 300ms ease-in-out;
+    cursor: pointer;
+    background:none;
+    border:none;
+    padding: 0 10px;
+}
+#del-btn{
+    transform: scale(.8);
+}
+.section-three>div li:hover .income-item,
+.section-three>div li:hover .expense-item,
+.section-three>div li:hover .value,
+.section-three>div li:hover .percent{
+    transform:translateX(-60px);}
 
